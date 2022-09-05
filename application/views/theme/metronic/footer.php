@@ -23,11 +23,15 @@
 <!--end::Page-->
 </div>
 <!--end::Main-->
-<?php if ($data_user_detail['status'] == 7) {
-    $division = "Program Internship";
-} else {
-    $division = "Internship Mentor";
-} ?>
+<?php 
+    if ($data_user_detail['status'] == 7) {
+        $division = "Program Internship";
+    } else {
+        $division = "Internship Mentor";
+    }
+
+    $image = empty($data_user['name_pict']) ? 'no-profile.jpg' : $data_user['name_pict']; 
+?>
 <!-- begin::User Panel-->
 <div id="kt_quick_user" class="offcanvas offcanvas-right p-10">
     <!--begin::Header-->
@@ -43,7 +47,7 @@
         <!--begin::Header-->
         <div class="d-flex align-items-center mt-5">
             <div class="symbol symbol-100 mr-5">
-                <div class="symbol-label" style="background-image:url('https://s.soloabadi.com/system-absen/asset/img/user/<?= $image['msg'][0]['notes_pict']; ?>')"></div>
+                <div class="symbol-label" style="background-image:url('https://s.soloabadi.com/system-absen/asset/img/user/<?= $image; ?>')"></div>
                 <a href="<?= base_url('auth/logout'); ?>" class="btn btn-sm  font-weight-bolder py-2 px-5 mt-2 ml-4" style="background: #15499A; color:white;">Keluar</a>
             </div>
             <div class="d-flex flex-column">

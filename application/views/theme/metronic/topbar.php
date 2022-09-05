@@ -1,5 +1,7 @@
 <!--begin::Wrapper-->
-<?php $data_user = $this->session->userdata(['data'][0]);
+<?php 
+    $data_user = $this->session->userdata(['data'][0]);
+    $image = empty($data_user['name_pict']) ? 'no-profile.jpg' : $data_user['name_pict'];
 ?>
 
 <div class="d-flex flex-column flex-row-fluid wrapper" id="kt_wrapper">
@@ -23,7 +25,7 @@
                         <span class="text-light-50 font-weight-bolder font-size-base d-none d-md-inline mr-3"><?= $data_user['name'] ?></span>
                         <span class="symbol symbol-lg-35 symbol-25 symbol-light">
                             <span class="symbol-label">
-                                <span class="symbol-label" style="background-image:url('https://s.soloabadi.com/system-absen/asset/img/user/<?= $image['msg'][0]['notes_pict']; ?>')"></span>
+                                <span class="symbol-label" style="background-image:url('https://s.soloabadi.com/system-absen/asset/img/user/<?= $image; ?>')"></span>
                             </span>
                         </span>
                     </div>
