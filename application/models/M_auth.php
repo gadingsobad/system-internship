@@ -41,7 +41,7 @@ class M_auth extends CI_Model
 
     public function curl_login($username = '', $password = '')
     {
-        $url = 'http://s.soloabadi.com/system-absen/include/curl.php';
+        $url = 'https://s.soloabadi.com/system-absen/include/curl.php';
         $data = array(
             'object' => 'sobad_user',
             'func' => 'check_login',
@@ -67,7 +67,7 @@ class M_auth extends CI_Model
 
     public function cek_data()
     {
-        $url = 'http://s.soloabadi.com/system-absen/include/curl.php';
+        $url = 'https://s.soloabadi.com/system-absen/include/curl.php';
         $data = array(
             'object' => 'sobad_user',
             'func' => 'get_all',
@@ -82,7 +82,7 @@ class M_auth extends CI_Model
     public function get_id($id = '')
     {
 
-        $url = 'http://s.soloabadi.com/system-absen/include/curl.php';
+        $url = 'https://s.soloabadi.com/system-absen/include/curl.php';
         $data = array(
             'object' => 'sobad_user',
             'func' => 'get_id',
