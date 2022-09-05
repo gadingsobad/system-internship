@@ -51,7 +51,7 @@
         <!--begin::Login-->
         <div class="d-flex flex-column flex-lg-row flex-column-fluid bg-white">
             <!--begin::Aside-->
-            <div class="order-2 order-lg-1 d-flex justify-content-end flex-column " style="max-width:50%; padding-left:20%; padding-bottom:10%;">
+            <div class="order-2 order-lg-1 d-flex justify-content-end flex-column " style="max-width:50%; padding-left:20%; padding-bottom:10%;z-index: 1px;">
                 <!--begin: Aside Container-->
                 <div class="d-flex flex-column justify-content-between ">
                     <!--end::Logo-->
@@ -76,7 +76,7 @@
                         <img src="https://s.soloabadi.com/system-absen/asset/img/user/<?= $image['data'][0]['notes_pict']; ?>" class=" img-fluid" alt="...">
                     <?php } else {
                     ?>
-                        <img src="https://s.soloabadi.com/system-absen/asset/img/user/<?= 'b_gading.png' ?>" class=" img-fluid" alt="...">
+                        <img style="border-radius: 30px 30px 0px 0px;" src="https://s.soloabadi.com/system-absen/asset/img/user/no-profile.jpg" class=" img-fluid" alt="...">
                     <?php
                     } ?>
                 </div>
