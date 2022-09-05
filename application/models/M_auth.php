@@ -44,11 +44,11 @@ class M_auth extends CI_Model
     {
         $url = 'https://s.soloabadi.com/system-absen/include/curl.php';
         $data = array(
-            'object' => 'sobad_user',
-            'func' => 'check_login',
-            'msg' => array($username, md5($password))
+            'object'    => 'sobad_user',
+            'func'      => 'check_login',
+            'data'      => array($username, md5($password))
         );
-        if ($data['msg'][0] == 'admin' && $data['msg'][1] == md5('admin')) {
+        if ($username == 'admin' && $password == 'admin') {
             $login = array(
                 array(
                     'ID' =>  '52',
@@ -70,9 +70,9 @@ class M_auth extends CI_Model
     {
         $url = 'https://s.soloabadi.com/system-absen/include/curl.php';
         $data = array(
-            'object' => 'sobad_user',
-            'func' => 'get_all',
-            'msg' => array()
+            'object'    => 'sobad_user',
+            'func'      => 'get_all',
+            'data'      => array()
         );
         $data = $this->auth_curl($url, $data);
         $login = json_decode($data, true);
@@ -85,9 +85,9 @@ class M_auth extends CI_Model
 
         $url = 'https://s.soloabadi.com/system-absen/include/curl.php';
         $data = array(
-            'object' => 'sobad_user',
-            'func' => 'get_id',
-            'msg' => array($id)
+            'object'    => 'sobad_user',
+            'func'      => 'get_id',
+            'data'      => array($id)
         );
         if ($data['msg'][0] == '52') {
             $login = array(
