@@ -89,7 +89,7 @@ class M_auth extends CI_Model
             'func'      => 'get_id',
             'data'      => array($id)
         );
-        if ($data['msg'][0] == '52') {
+        if ($id == '52') {
             $login = array(
                 array(
                     'meta_value_divi' =>  'Junior IT Programmer',
