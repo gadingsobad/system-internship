@@ -51,7 +51,7 @@
         <!--begin::Login-->
         <div class="d-flex flex-column flex-lg-row flex-column-fluid bg-white">
             <!--begin::Aside-->
-            <div class="order-2 order-lg-1 d-flex justify-content-end flex-column " style="max-width:50%; padding-left:20%; padding-bottom:10%;z-index: 1px;">
+            <div class="order-2 order-lg-1 d-flex justify-content-end flex-column " style="max-width:50%; padding-left:20%; padding-bottom:10%;z-index: 1;">
                 <!--begin: Aside Container-->
                 <div class="d-flex flex-column justify-content-between ">
                     <!--end::Logo-->
