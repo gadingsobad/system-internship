@@ -86,39 +86,39 @@ function mpdf_setting($data = array())
     // ===================Documentation====================
     // ================MPDF Configuration==================
     // ==============Copy paste On Controller==============
-    // $data_pdf = array(
-    //     'setings' => 'blabla bla'
-    // );
-    // $config_mpdf = array(
-    //     'format'        => 'a4',
-    //     'position'      => 'P',
-    //     'margin_left'   => 10,
-    //     'margin_right'  => 10,
-    //     'margin_top'    => 10,
-    //     'margin_bottom' => 10,
-    //     'margin_header' => 10,
-    //     'margin_footer' => 10,
-    //     'header'     => array(
-    //         'location'     => 'template/template-pdf/test-header',
-    //         'data'              => $data_pdf
-    //     ),
-    //     'content'     => array(
-    //         array(
-    //             'location'     => 'template/template-pdf/report-pdf',
-    //             'data'              => $data_pdf
-    //         ),
-    //         array(
-    //             'location'     => 'template/template-pdf/report-pdftest',
-    //             'data'              => $data_pdf
-    //         ),
-    //     ),
-    //     'footer'     => array(
-    //         'location'     => 'template/template-pdf/test-footer',
-    //         'data'              => $data_pdf
-    //     ),
-    // );
+    $data_pdf = array(
+        'setings' => 'blabla bla'
+    );
+    $config_mpdf = array(
+        'format'        => 'a4',
+        'position'      => 'P',
+        'margin_left'   => 10,
+        'margin_right'  => 10,
+        'margin_top'    => 10,
+        'margin_bottom' => 10,
+        'margin_header' => 10,
+        'margin_footer' => 10,
+        'header'     => array(
+            'location'     => 'template/template-pdf/test-header',
+            'data'              => $data_pdf
+        ),
+        'content'     => array(
+            array(
+                'location'     => 'template/template-pdf/report-pdf',
+                'data'              => $data_pdf
+            ),
+            array(
+                'location'     => 'template/template-pdf/report-pdftest',
+                'data'              => $data_pdf
+            ),
+        ),
+        'footer'     => array(
+            'location'     => 'template/template-pdf/test-footer',
+            'data'              => $data_pdf
+        ),
+    );
 
-    // mpdf_setting($config_mpdf);
+    mpdf_setting($config_mpdf);
 
     // ====================================================
     $ci = get_instance();
