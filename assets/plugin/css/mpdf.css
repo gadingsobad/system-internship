@@ -1,48 +1,48 @@
 /* @font-face {
-    font-family: inter-regular;
-    src: url('../font/inter-regular.woff');
+    font-family: inter;
+    src: url('../font/inter.woff');
 } */
     
     body {
-        font-family: inter-regular;
+        font-family: inter;
         font-size: 12px;
         font-weight: normal;
     }
 
     h1 {
         font-size: 90px;
-        font-family: inter-regular;
+        font-family: inter;
     }
 
     h2 {
         font-size: 70px;
-        font-family: inter-regular;
+        font-family: inter;
     }
 
     h3 {
         font-size: 40px;
-        font-family: inter-regular;
+        font-family: inter;
     }
 
     h4 {
         font-size: 25px;
-        font-family: inter-regular;
+        font-family: inter;
     }
 
     h5 {
         font-size: 18px;
-        font-family: inter-regular;
+        font-family: inter;
     
     }
 
     h6 {
         font-size: 10px;
-        font-family: inter-regular;
+        font-family: inter;
     }
 
     p {
         font-size: 16px;
-        font-family: inter-regular;
+        font-family: inter;
     }
 
     .text-space-xs {
@@ -98,7 +98,7 @@
 
     /* sobad-table-style */
     .sobad-table {
-        font-family: inter-regular;
+        font-family: inter;
         font-weight: normal;
         width: 100% !important;
     }
@@ -166,7 +166,7 @@
     }
 
     .qrcode {
-        font-family: inter-regular !important;
+        font-family: inter !important;
         font-size: 5px;
         padding-right: 2px;
         padding-left: 2px;

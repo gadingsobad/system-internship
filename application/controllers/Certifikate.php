@@ -49,7 +49,7 @@ class Certifikate extends CI_Controller
             'output_name'   => 'Sertifikat Magang',
             'margin_left'   => 5,
             'margin_right'  => 5,
-            'margin_top'    => 5,
+            'margin_top'    => 0,
             'margin_bottom' => 5,
             'margin_header' => 10,
             'margin_footer' => 10,

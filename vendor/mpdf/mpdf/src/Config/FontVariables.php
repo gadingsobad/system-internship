@@ -93,6 +93,9 @@ class FontVariables
 			 */
 
 			'fontdata' => [
+				"inter" => [
+					'R' => "Inter-regular.ttf",
+				],
 				"dejavusanscondensed" => [
 					'R' => "DejaVuSansCondensed.ttf",
 					'B' => "DejaVuSansCondensed-Bold.ttf",
@@ -305,20 +308,23 @@ class FontVariables
 			//     (Otherwise the order is irrelevant)
 			// Use the mPDF font-family names i.e. lowercase and no spaces (after any translations in $fonttrans)
 			// Always include "sans-serif", "serif" and "monospace" etc.
-			'sans_fonts' => ['dejavusanscondensed', 'sans', 'sans-serif', 'cursive', 'fantasy', 'dejavusans', 'freesans', 'liberationsans',
+			'sans_fonts' => [
+				'dejavusanscondensed', 'sans', 'sans-serif', 'cursive', 'fantasy', 'dejavusans', 'freesans', 'liberationsans',
 				'arial', 'helvetica', 'verdana', 'geneva', 'lucida', 'arialnarrow', 'arialblack',
 				'franklin', 'franklingothicbook', 'tahoma', 'garuda', 'calibri', 'trebuchet', 'lucidagrande', 'microsoftsansserif',
 				'trebuchetms', 'lucidasansunicode', 'franklingothicmedium', 'albertusmedium', 'xbriyaz', 'albasuper', 'quillscript',
 				'humanist777', 'humanist777black', 'humanist777light', 'futura', 'hobo', 'segoeprint'
 			],
 
-			'serif_fonts' => ['dejavuserifcondensed', 'serif', 'dejavuserif', 'freeserif', 'liberationserif',
+			'serif_fonts' => [
+				'dejavuserifcondensed', 'serif', 'dejavuserif', 'freeserif', 'liberationserif',
 				'timesnewroman', 'times', 'centuryschoolbookl', 'palatinolinotype', 'centurygothic',
 				'bookmanoldstyle', 'bookantiqua', 'cyberbit', 'cambria',
 				'norasi', 'charis', 'palatino', 'constantia', 'georgia', 'albertus', 'xbzar', 'algerian', 'garamond',
 			],
 
-			'mono_fonts' => ['dejavusansmono', 'mono', 'monospace', 'freemono', 'liberationmono', 'courier', 'ocrb', 'ocr-b', 'lucidaconsole',
+			'mono_fonts' => [
+				'dejavusansmono', 'mono', 'monospace', 'freemono', 'liberationmono', 'courier', 'ocrb', 'ocr-b', 'lucidaconsole',
 				'couriernew', 'monotypecorsiva'
 			],
 		];
@@ -328,5 +334,4 @@ class FontVariables
 	{
 		return $this->defaults;
 	}
-
 }
