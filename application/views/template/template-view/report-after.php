@@ -9,7 +9,7 @@
     }
 
     h1 {
-        font-size: 40px;
+        font-size: 36px;
     }
 
     @media only screen and (max-width: 786px) {

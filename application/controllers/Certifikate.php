@@ -26,10 +26,10 @@ class Certifikate extends CI_Controller
         $this->load->view('theme/metronic/header');
         $this->load->view('theme/metronic/sidebar', $data);
         $this->load->view('theme/metronic/topbar');
-        if ($data['data_user_detail']['_resign_date'] == date('Y-m-d')) {
+        if ($data['data_user_detail']['_resign_date'] !== date('Y-m-d')) {
             $this->load->view('template/template-view/certivicate-before', $data);
         }
-        if ($data['data_user_detail']['_resign_date'] !== date('Y-m-d')) {
+        if ($data['data_user_detail']['_resign_date'] == date('Y-m-d')) {
             $this->load->view('template/template-view/certivicate-after', $data);
         }
         $this->load->view('theme/metronic/footer');
