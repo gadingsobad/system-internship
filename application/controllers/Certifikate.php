@@ -23,14 +23,13 @@ class Certifikate extends CI_Controller
         $data['title'] = 'Internship Certifikate';
         $data['note'] = 'Hallo! Untuk mendapatkan sertifikat magang, harap selesaikan jadwal magang mu terlebih dahulu ya.';
 
-
         $this->load->view('theme/metronic/header');
         $this->load->view('theme/metronic/sidebar', $data);
         $this->load->view('theme/metronic/topbar');
-        if ($data['data_user_detail']['_resign_date'] !== date('Y-m-d')) {
+        if ($data['data_user_detail']['_resign_date'] == date('Y-m-d')) {
             $this->load->view('template/template-view/certivicate-before', $data);
         }
-        if ($data['data_user_detail']['_resign_date'] == date('Y-m-d')) {
+        if ($data['data_user_detail']['_resign_date'] !== date('Y-m-d')) {
             $this->load->view('template/template-view/certivicate-after', $data);
         }
         $this->load->view('theme/metronic/footer');
